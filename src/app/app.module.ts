@@ -17,6 +17,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 
 
 import { ButtonsComponent } from './buttons/buttons.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     UsersComponent,
     AdminComponent,
     TableComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

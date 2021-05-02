@@ -2,23 +2,14 @@
 <!--Instert submit event on form tag we will create an funtion on ts file and will get values-->
 <!--add ngModal on inputs for difine form conectivty-->
 
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-  <mat-drawer-content>Main content</mat-drawer-content>
-</mat-drawer-container>
+<app-sidenav></app-sidenav>
 
 
 
-<app-table></app-table>
-<br />
-<br />
 
-<app-buttons></app-buttons>
 
-<a routerLink="user">User</a><br /><br />
-<a routerLink="admin">Admin</a>
 
-<router-outlet></router-outlet>
+
 
 <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
     <input type="text" ngModel name="username" placeholder="name" /><br /><br />
