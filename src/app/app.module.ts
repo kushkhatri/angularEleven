@@ -7,19 +7,24 @@ import { UsersComponent } from './users/users.component';
 import {UsersModule} from './users/users.module';
 import {FormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
-
+import { TableComponent } from './table/table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    AdminComponent
+    AdminComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
       UsersModule,
-      FormsModule
+      FormsModule,
+      BrowserAnimationsModule,
+      MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
